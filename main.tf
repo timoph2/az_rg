@@ -1,7 +1,7 @@
 
 
 resource "azurerm_resource_group" "rg" {
-  name     = "myTFResourceGroupToday2"
+  name     = "plain RG"
   location = "westus2"
 }
 
