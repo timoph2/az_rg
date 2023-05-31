@@ -10,7 +10,13 @@ variable "location" {
   default     = "UK South"
  
   validation {
-    condition     = var.location == var.location ? 1 : 2
+#     condition     = var.location == var.location ? 1 : 2
+    condition     = false ? 1 : 2
+   
+
+
+   
+   
     error_message = "Must be either `least-waste`, `most-pods`, `priority` or `random`."
   }
 }
