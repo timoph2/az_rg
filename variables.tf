@@ -16,7 +16,7 @@ variable "location" {
  
   validation {
 #     condition     = var.location == var.location ? 1 : 2
-    condition     = (var.location != "" ? "" : "default-a")
+    condition     = var.location != "" ? "" : "default-a"
    
 
 
