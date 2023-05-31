@@ -1,7 +1,7 @@
 
 
 resource "azurerm_resource_group" "rg" {
-  name     = "plain RG"
+  name     = "plain-RG"
   location = "westus2"
 }
 
