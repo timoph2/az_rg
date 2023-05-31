@@ -15,8 +15,9 @@ variable "location" {
 
    locals {
 #   test = contains( [var.location],var.location ) 
-#   test = true 
-  test2 =  sort(["e", "d", "a", "x"])
+  test = true 
+#   test2 =  sort(["e", "d", "a", "x"]) #collection functions
+    test2 = endswith("hello world", "world")
 }
    
     condition     = local.test 
