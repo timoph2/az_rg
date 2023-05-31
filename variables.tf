@@ -14,7 +14,7 @@ variable "location" {
 #     condition     = var.location == var.location 
 
    locals {
-  test = var.location == var.location
+  test = contains( [var.location],var.location ) 
 }
    
     condition     = locals.test 
