@@ -15,9 +15,10 @@ variable "location" {
 
    locals {
 #   test = contains( [var.location],var.location ) 
-  test = true 
+    test = true 
 #   test2 =  sort(["e", "d", "a", "x"]) #collection functions
-    test2 = endswith("hello world", "world")
+#   test2 = endswith("hello world", "world") #string function works
+  test2 = max(12, 54, 3)) #math function works
 }
    
     condition     = local.test 
