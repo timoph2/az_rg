@@ -10,24 +10,19 @@ variable "location" {
   default     = "UK South"
  
   validation {
-#     condition     = var.location == ""
-#     condition     = var.location == var.location 
-
-   locals {
-#   test = contains( [var.location],var.location )   #collection functions
-    test = true 
-    
-#   test2 = floor(4.9) #numeric function 
-#   test2 = endswith("hello world", "world") #string function works
-#   test2 = abspath(path.root) #file function works
-#   test2 = cidrhost("10.12.112.0/20", 16) #IP Network function 
-  test2 = tobool(true) #Type conversion function 
-    
-    
-}
-   
-    condition     = local.test 
-#     condition     = contains( [var.location],var.location) 
+    condition     = var.location == var.location 
     error_message = "Must be either `least-waste`, `most-pods`, `priority` or `random`."
   }
 }
+
+#    locals {
+# #   test = contains( [var.location],var.location )   #collection functions
+#     test = true 
+    
+# #   test2 = floor(4.9) #numeric function 
+# #   test2 = endswith("hello world", "world") #string function works
+# #   test2 = abspath(path.root) #file function works
+# #   test2 = cidrhost("10.12.112.0/20", 16) #IP Network function 
+#     test2 = tobool(true) #Type conversion function  
+
+
