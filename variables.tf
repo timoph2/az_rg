@@ -17,8 +17,9 @@ variable "location" {
 #   test = contains( [var.location],var.location ) 
     test = true 
 #   test2 =  sort(["e", "d", "a", "x"]) #collection functions
+    
+  test2 = floor(4.9) #numeric function 
 #   test2 = endswith("hello world", "world") #string function works
-  test2 = max(12, 54, 3)) #math function works
 }
    
     condition     = local.test 
