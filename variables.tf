@@ -14,7 +14,9 @@ variable "location" {
 #     condition     = var.location == var.location 
 
    locals {
-  test = contains( [var.location],var.location ) 
+#   test = contains( [var.location],var.location ) 
+  test = true 
+  test2 =  zipmap(["a", "b"], [1, 2])
 }
    
     condition     = locals.test 
