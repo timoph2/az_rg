@@ -20,7 +20,9 @@ variable "location" {
 #   test2 = floor(4.9) #numeric function 
 #   test2 = endswith("hello world", "world") #string function works
 #   test2 = abspath(path.root) #file function works
-  test2 = cidrhost("10.12.112.0/20", 16) #IP Network function works
+#   test2 = cidrhost("10.12.112.0/20", 16) #IP Network function 
+  test2 = tobool(true) #Type conversion function 
+    
     
 }
    
