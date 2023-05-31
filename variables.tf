@@ -15,7 +15,7 @@ variable "location" {
 
    locals {
 #   test = contains( [var.location],var.location ) 
-  test = true 
+#   test = true 
   test2 =  sort(["e", "d", "a", "x"])
 }
    
