@@ -16,10 +16,10 @@ variable "location" {
    locals {
 #   test = contains( [var.location],var.location ) 
   test = true 
-  test2 =  zipmap(["a", "b"], [1, 2])
+  test2 =  sort(["e", "d", "a", "x"])
 }
    
-    condition     = locals.test 
+    condition     = local.test 
 #     condition     = contains( [var.location],var.location) 
     error_message = "Must be either `least-waste`, `most-pods`, `priority` or `random`."
   }
